@@ -3,16 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>한국문화상자</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-    <script src="js/jquery-3.7.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js'></script>
-    <script src="js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+<!-- css 및 js 파일 연동 [순서 - 로컬 link - 외부 link - jquery - main.js (효율성)]-->
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<script src="/js/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js'></script>
+<script src="/js/main.js"></script>
+<!-- 파비콘 등록 -->
+<!-- <link rel="icon" href="/"> 아직 파비콘 적용시 입력  -->
 
 <body>
     <div class="wrap">
@@ -21,7 +25,7 @@
                 <div class="center">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="img/logo.png" alt="logo">
+                            <img src="img/Logo.png" alt="logo">
                         </a>
                     </div>
                 </div>
@@ -32,7 +36,7 @@
                         <div class="menu-icon">
                             <div class="menu-btn">
                                 <a href="#">
-                                    <img src="img/menu-icon.svg" alt="menu-icon">
+                                    <img src="img/menu_icon.svg" alt="menu-icon">
                                 </a>
                             </div>
                             <div class="logo2">
@@ -41,480 +45,443 @@
                                 </a>
                             </div>
                         </div>
+
                         <nav>
                             <ul>
-                                <li><a href="#">안녕</a></li>
-                                <li><a href="#">사랑방</a></li>
-                                <li><a href="#">안방</a></li>
-                                <li><a href="#">한복</a></li>
+                                <li><a href="#">Our Beers</a></li>
+                                <li><a href="#">Restaurant</a></li>
+                                <li><a href="#">Online Shop</a></li>
+                                <li><a href="#">Career</a></li>
                             </ul>
+
                         </nav>
                         <div class="member">
                             <ul>
                                 <li><a href="#">LOGIN</a></li>
-                                <li><a href="#">SIGNUP</a></li>
-                                <li><a href="#">
-                                        <span class="search-icon"><img src="img/search.svg" alt="search"></span>
-                                        <span class="close-icon"><img src="img/close.svg" alt="close"></span>
-                                    </a></li>
+                                <li><a href="#">SINEUP</a></li>
+                                <li>
+                                    <a href="#">
+                                        <span class="search-icon"><img src="img/Search.svg" alt="Search"></span>
+                                        <span class="close-icon"><img src="img/close_icon.svg" alt="close"></span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+
         <section class="s1">
             <div class="center">
                 <div class="main">
                     <div class="swiper mainSwiper">
+
                         <div class="swiper-wrapper">
+
                             <div class="swiper-slide">
                                 <a href="#">
                                     <div class="img-box">
-                                        <img src="img/slide1.jpg" alt="한글">
+                                        <img src="img/slide1.jpg" alt="아이스박스">
                                         <p></p>
                                     </div>
                                     <div class="txt-box">
-                                        <h2>한국인의 글자, 한글</h2>
-                                        <p>훈민정음 혜례본</p>
+                                        <h2>Freeze!</h2>
+                                        <p>Brasseur de Montréal`s ALL New Package</p>
                                     </div>
                                 </a>
-                            </div>
+                            </div> <!-- swiper-slide-->
+
                             <div class="swiper-slide">
                                 <a href="#">
                                     <div class="img-box">
-                                        <img src="img/slide2.jpg" alt="민속놀이">
+                                        <img src="img/slide2.jpg" alt="맥주">
                                         <p></p>
                                     </div>
                                     <div class="txt-box">
-                                        <h2>흥 많은 한국인의 놀이문화</h2>
-                                        <p>사물놀이 풍경</p>
+                                        <h2>Our Pub</h2>
+                                        <p>Welcome to the
+                                            Brasseur de
+                                            Montréal
+                                            resto-pub</p>
                                     </div>
                                 </a>
-                            </div>
+                            </div> <!-- swiper-slide-->
+
                             <div class="swiper-slide">
                                 <a href="#">
                                     <div class="img-box">
-                                        <img src="img/slide3.jpg" alt="수원화성">
+                                        <img src="img/slide3.jpg" alt="햄버거">
                                         <p></p>
                                     </div>
                                     <div class="txt-box">
-                                        <h2>세계문화유산으로 지정된 수원화성</h2>
-                                        <p>경기도 수원</p>
+                                        <h2>Taste our Burger</h2>
+                                        <p>Essen Sie Burger mit unserem WeissBier</p>
                                     </div>
                                 </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="img-box">
-                                        <img src="img/slide4.jpg" alt="한복">
-                                        <p></p>
-                                    </div>
-                                    <div class="txt-box">
-                                        <h2>한국인의 전통의상, 한복</h2>
-                                        <p>아름다운 한복</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="img-box">
-                                        <img src="img/slide5.jpg" alt="비빔밥">
-                                        <p></p>
-                                    </div>
-                                    <div class="txt-box">
-                                        <h2>한국인의 밥상, 비빔밥</h2>
-                                        <p>화려한 색감과 맛을 자랑하는 식단</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div><!-- swiper-wrapper -->
+                            </div> <!-- swiper-slide-->
+
+
+                        </div><!-- swiper-wrapper-->
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-pagination"></div>
-                    </div>
+                    </div><!-- swiper mainSwiper-->
                 </div>
-            </div>
+            </div><!-- main -->
         </section>
         <section class="s2">
             <div class="center">
                 <div class="title">
-                    <h1>한국문화상자를 소개합니다.</h1>
-                    <a href="#">더보기 <i><img src="img/plus.svg" alt="더하기"></i></a>
+                    <h1>Take your pick
+                        from our beers</h1>
+                    <a href="#">더보기 <i><img src="/img/plus_icon.svg" alt="더보기"></i></a>
                 </div>
                 <div class="container">
-                    <!-- scrollTrigger의 pin 영역 -->
+                    <!-- scroll trigger 의 pin 영역-->
                     <div class="left-con">
-                        <!-- css에서 photo에 hover하면 이미지가 커지는 애니메이션 -->
-                        <div class="photo main">
-                            <img src="img/main.jpg" alt="메인">
-                        </div>
-                        <p>한국 전통사회의 생활</p>
+                        <!-- hover 시 이미지가 커지는 애니메이션-->
+                        <a href="#">
+                            <div class="photo">
+                                <img src="./img/Main.jpg" alt="">
+                            </div>
+                            <p></p>
+                        </a>
                     </div>
                     <div class="right-con">
-                        <!-- short 클래스는 높이 : 300 -->
-                        <!-- long 클래스는 높이 : 400 -->
-                        <div class="photo-box">
-                            <a href="#">
+                        <!--short 클래스의 높이 통일 : 300-->
+                        <!--long 클래스의 높이 통일 : 400-->
+
+                        <a href="#">
+                            <div class="photo-box">
                                 <div class="photo short">
-                                    <img src="img/hangul.png" alt="한글">
+                                    <img src="img/right-photo1-1.jpg" alt="">
                                 </div>
-                                <p>한국인의 글자, 한글</p>
-                            </a>
-                        </div>
-                        <div class="photo-box">
-                            <a href="#">
+                                <p></p>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="photo-box">
                                 <div class="photo short">
-                                    <img src="img/national-flag.png" alt="태극기">
+                                    <img src="img/right-photo7.jpg" alt="">
                                 </div>
-                                <p>대한민국의 국기, 태극기</p>
-                            </a>
-                        </div>
-                        <div class="photo-box">
-                            <a href="#">
+                                <p></p>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="photo-box">
                                 <div class="photo long">
-                                    <img src="img/national-flower.jpg" alt="무궁화">
+                                    <img src="/img/right-photo5.jpg" alt="">
                                 </div>
-                                <p>대한민국의 국화, 무궁화</p>
-                            </a>
-                        </div>
-                        <div class="photo-box">
-                            <a href="#">
+                                <p>ELECTED L`AMER OF MTL</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="photo-box">
                                 <div class="photo short">
-                                    <img src="img/national-clothes.jpg" alt="한복">
+                                    <img src="img/right-photo1-1.jpg" alt="">
                                 </div>
-                                <p>대한민국의 의복, 한복</p>
-                            </a>
-                        </div>
-                        <div class="photo-box">
-                            <a href="#">
+                                <p></p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="photo-box">
                                 <div class="photo long">
-                                    <img src="img/national-history.jpg" alt="역사">
+                                    <img src="/img/right-photo2.jpg" alt="">
                                 </div>
-                                <p>대한민국의 역사</p>
-                            </a>
-                        </div>
-                        <div class="photo-box">
-                            <a href="#">
+                                <p>A MYTHICAL GRAIN SILO</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="photo-box">
                                 <div class="photo short">
-                                    <img src="img/national-Inheritance.jpg" alt="세계유산">
+                                    <img src="img/right-photo3.jpg" alt="">
                                 </div>
-                                <p>대한민국의 세계유산</p>
-                            </a>
-                        </div>
-                        <div class="photo-box">
-                            <a href="#">
+                                <p></p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="photo-box">
                                 <div class="photo short">
-                                    <img src="img/national-food.jpg" alt="음식문화">
+                                    <img src="img/right-photo4.jpg" alt="">
                                 </div>
-                                <p>대한민국의 음식문화</p>
-                            </a>
-                        </div>
-                        <div class="photo-box">
-                            <a href="#">
+                                <p></p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="photo-box">
                                 <div class="photo short">
-                                    <img src="img/national-tea.jpg" alt="차문화">
+                                    <img src="img/right-photo6.jpg" alt="">
                                 </div>
-                                <p>대한민국의 차문화</p>
-                            </a>
-                        </div>
+                                <p></p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="s3">
             <div class="center">
                 <div class="title">
-                    <h1>품위있는 남성의 공간, 사랑방</h1>
+                    <h1>Welcome to the
+                        Brasseur de
+                        Montréal
+                        resto-pub</h1>
                 </div>
                 <div class="container">
-                    <div class="swiper gallerySlide">
+                    <div class="swiper swiper1">
                         <div class="swiper-wrapper">
+
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="">
                                     <div class="photo">
-                                        <img src="img/cont_p_02_00_02.jpg" alt="">
+                                        <img src="img/restaurant1.jpg" alt="">
                                     </div>
-                                    <p>책가도 병풍</p>
+                                    <p></p>
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="">
                                     <div class="photo">
-                                        <img src="img/cont_p_02_00_03.jpg" alt="">
+                                        <img src="img/restaurant2.jpg" alt="">
                                     </div>
-                                    <p>서안</p>
+                                    <p></p>
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="">
                                     <div class="photo">
-                                        <img src="img/cont_p_02_00_04.jpg" alt="">
+                                        <img src="img/restaurant3.jpg" alt="">
                                     </div>
-                                    <p>문방사우</p>
+                                    <p></p>
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="">
                                     <div class="photo">
-                                        <img src="img/cont_p_02_00_05.jpg" alt="">
+                                        <img src="img/restaurant4.jpg" alt="">
                                     </div>
-                                    <p>붓걸이</p>
+                                    <p></p>
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="">
                                     <div class="photo">
-                                        <img src="img/cont_p_02_00_06.jpg" alt="">
+                                        <img src="img/restaurant5.jpg" alt="">
                                     </div>
-                                    <p>촛대</p>
+                                    <p></p>
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="">
                                     <div class="photo">
-                                        <img src="img/cont_p_02_00_07.jpg" alt="">
+                                        <img src="img/restaurant6.jpg" alt="">
                                     </div>
-                                    <p>흉배</p>
+                                    <p></p>
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="">
                                     <div class="photo">
-                                        <img src="img/cont_p_02_00_08.jpg" alt="">
+                                        <img src="img/restaurant7.jpg" alt="">
                                     </div>
-                                    <p>정자관</p>
+                                    <p></p>
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="">
                                     <div class="photo">
-                                        <img src="img/cont_p_02_00_09.jpg" alt="">
+                                        <img src="img/restaurant8.jpg" alt="">
                                     </div>
-                                    <p>대금</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="photo">
-                                        <img src="img/cont_p_02_00_10.jpg" alt="">
-                                    </div>
-                                    <p>활, 화살</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="photo">
-                                        <img src="img/cont_p_02_00_11.jpg" alt="">
-                                    </div>
-                                    <p>시와 글짓기 모임 그림</p>
+                                    <p></p>
                                 </a>
                             </div>
                         </div>
                         <div class="swiper-scrollbar"></div>
                     </div>
+
                 </div>
             </div>
         </section>
+
         <section class="s4">
             <div class="center">
                 <div class="title">
-                    <h1>우아한 여성의 공간, 안방</h1>
+                    <h1>Welcome to the
+                        Brasseur de
+                        Montréal
+                        resto-pub</h1>
                 </div>
                 <div class="container">
-                    <div class="swiper gallerySlide">
+                    <div class="swiper swiper1">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="">
                                     <div class="photo">
-                                        <img src="img/cont_p_03_00_01.jpg" alt="">
+                                        <img src="img/shop1.webp" alt="">
                                     </div>
-                                    <p>화조도 병풍</p>
+                                    <p>BDM - Casquette Silo</p>
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="">
                                     <div class="photo">
-                                        <img src="img/cont_p_03_00_02.jpg" alt="">
+                                        <img src="img/shop2.webp" alt="">
                                     </div>
-                                    <p>경대</p>
+                                    <p>BDM - Coton ouaté Jaune</p>
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="">
                                     <div class="photo">
-                                        <img src="img/cont_p_03_00_03.jpg" alt="">
+                                        <img src="img/shop3.webp" alt="">
                                     </div>
-                                    <p>반짇고리</p>
+                                    <p>BDM - Sac en coton - Normanville</p>
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="">
                                     <div class="photo">
-                                        <img src="img/cont_p_03_00_04.jpg" alt="">
+                                        <img src="img/shop4.webp" alt="">
                                     </div>
-                                    <p>사방탁자</p>
+                                    <p>BDM - Verre Teku</p>
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="">
                                     <div class="photo">
-                                        <img src="img/cont_p_03_00_05.jpg" alt="">
+                                        <img src="img/shop5.webp" alt="">
                                     </div>
-                                    <p>화로</p>
+                                    <p>BDM - Frisbee chien</p>
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="">
                                     <div class="photo">
-                                        <img src="img/cont_p_03_00_06.jpg" alt="">
+                                        <img src="img/shop6.webp" alt="">
                                     </div>
-                                    <p>비녀</p>
+                                    <p>BDM - Panier pique-nique</p>
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="">
                                     <div class="photo">
-                                        <img src="img/cont_p_03_00_07.jpg" alt="">
+                                        <img src="img/shop7.webp" alt="">
                                     </div>
-                                    <p>족두리, 앞댕기</p>
+                                    <p>BDM - Sac réutilisable</p>
                                 </a>
                             </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="photo">
-                                        <img src="img/cont_p_03_00_08.jpg" alt="">
-                                    </div>
-                                    <p>혼선</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="photo">
-                                        <img src="img/cont_p_03_00_09.jpg" alt="">
-                                    </div>
-                                    <p>주머니</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="photo">
-                                        <img src="img/cont_p_03_00_10.jpg" alt="">
-                                    </div>
-                                    <p>노리개</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="photo">
-                                        <img src="img/cont_p_03_00_11.jpg" alt="">
-                                    </div>
-                                    <p>조각보</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="photo">
-                                        <img src="img/cont_p_03_00_12.jpg" alt="">
-                                    </div>
-                                    <p>인두, 인두판</p>
-                                </a>
-                            </div>
+                            <div class="swiper-scrollbar"></div>
                         </div>
-                        <div class="swiper-scrollbar"></div>
                     </div>
-                </div>
-            </div>
         </section>
+
         <section class="s5">
             <div class="center">
                 <div class="title">
-                    <h1>고운 옷, 한복</h1>
-                    <a href="#">더보기 <i><img src="img/plus.svg" alt="더하기"></i></a>
+                    <h1>OUR TEAMS</h1>
+                    <a href="#">더보기 <i><img src="/img/plus_icon.svg" alt="더보기"></i></a>
                 </div>
                 <div class="container">
+                    <!-- scroll trigger 의 pin 영역-->
                     <div class="left-con">
+                        <!-- hover 시 이미지가 커지는 애니메이션-->
                         <a href="#">
-                            <div class="photo main">
-                                <img src="img/hanbok.png" alt="한복">
+                            <div class="photo">
+                                <img src="./img/team1.jpg" alt="">
                             </div>
-                            <p>고운 옷, 한복</p>
+                            <p>Matthieu Gervais</p>
                         </a>
                     </div>
+
                     <div class="right-con">
-                        <div class="photo-box">
-                            <a href="#">
-                                <div class="photo middle">
-                                    <img src="img/hanbok1.jpg" alt="남성한복">
+                        <a href="#">
+                            <div class="photo-box">
+                                <div class="photo big">
+                                    <img src="img/team2.jpg" alt="">
                                 </div>
-                                <p>남성한복(바지와 저고리)</p>
-                            </a>
-                        </div>
-                        <div class="photo-box">
-                            <a href="#">
-                                <div class="photo middle">
-                                    <img src="img/hanbok2.jpg" alt="여성한복">
+                                <p>Francis Simard</p>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="photo-box">
+                                <div class="photo big">
+                                    <img src="img/team3.jpg" alt="">
                                 </div>
-                                <p>여성한복(치마와 저고리)</p>
-                            </a>
-                        </div>
-                        <div class="photo-box">
-                            <a href="#">
-                                <div class="photo middle">
-                                    <img src="img/hanbok3.png" alt="전통 신발">
+                                <p>Marcel Boudreau</p>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="photo-box">
+                                <div class="photo big">
+                                    <img src="/img/team4.jpg" alt="">
                                 </div>
-                                <p>전통 신발(태사혜, 운혜, 나막신)</p>
-                            </a>
-                        </div>
-                        <div class="photo-box">
-                            <a href="#">
-                                <div class="photo middle">
-                                    <img src="img/hanbok4.jpg" alt="버선">
+                                <p>Yves Pauzé St-Martin</p>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="photo-box">
+                                <div class="photo big">
+                                    <img src="img/team5.jpg" alt="">
                                 </div>
-                                <p>버선</p>
-                            </a>
-                        </div>
+                                <p>Salomon Portelance</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="s6">
             <div class="center">
                 <div class="title">
-                    <h1>한국문화상자 활용사례</h1>
+                    <h1>Products</h1>
                 </div>
                 <div class="container">
-                    <div class="photo-box">
-                        <a href="#">
-                            <div class="photo exam">
-                                <img src="img/sample1.png" alt="자신의 이름을 한글놀이 프로그램으로 써보는 헝가리 학생들">
-                            </div>
-                            <p>자신의 이름을 한글놀이 프로그램으로 써보는 헝가리 학생들</p>
-                        </a>
+                    <div class="up-con">
+                        <div class="photo-box">
+                            <a href="#">
+                                <div class="photo exam1">
+                                    <img src="/img/las1.webp" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="photo-box">
+                            <a href="#">
+                                <div class="photo exam1">
+                                    <img src="/img/las2.webp" alt="">
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="photo-box">
-                        <a href="#">
-                            <div class="photo exam">
-                                <img src="img/sample2.png" alt="한국문화체험행사에서 한복을 입고 즐기는 참가자들">
-                            </div>
-                            <p>한국문화체험행사에서 한복을 입고 즐기는 참가자들</p>
-                        </a>
-                    </div>
-                    <div class="photo-box">
-                        <a href="#">
-                            <div class="photo exam">
-                                <img src="img/sample3.png" alt="한국문화상자의 사랑방 설명을 듣는 가자흐스탄 세종학당 학생들">
-                            </div>
-                            <p>한국문화상자의 사랑방 설명을 듣는 가자흐스탄 세종학당 학생들</p>
-                        </a>
-                    </div>
-                    <div class="photo-box">
-                        <a href="#">
-                            <div class="photo exam">
-                                <img src="img/sample4.png" alt="한복상자에서 한복을 입어보고 기념사진을 찍는 사람들">
-                            </div>
-                            <p>한복상자에서 한복을 입어보고 기념사진을 찍는 사람들</p>
-                        </a>
+                    <div class="down-con">
+                        <div class="photo-box">
+                            <a href="#">
+                                <div class="photo exam2">
+                                    <img src="/img/las3.webp" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="photo-box">
+                            <a href="#">
+                                <div class="photo exam2">
+                                    <img src="/img/las4.webp" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="photo-box">
+                            <a href="#">
+                                <div class="photo exam2">
+                                    <img src="/img/las5.webp" alt="">
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -523,10 +490,10 @@
             <div class="center">
                 <div class="container">
                     <div class="logo-icon">
-                        <img src="img/logo2.png" alt="로고">
+                        <img src="img/logo.png" alt="로고">
                     </div>
                     <p>실시간으로 업데이터 되는 한국문화상자의 최신 소식</p>
-                    <a href="#">팔로우하기 <i><img src="img/plus.svg" alt="더하기"></i></a>
+                    <a href="#">팔로우하기 <i><img src="img/plus_icon.svg" alt="더하기"></i></a>
                 </div>
             </div>
         </section>
@@ -535,7 +502,7 @@
                 <div class="center">
                     <div class="info">
                         <ul>
-                            <li><a href="#">한국문화상자 소개</a></li>
+                            <li><a href="#">사이트 소개</a></li>
                             <li><a href="#">고객센터</a></li>
                             <li><a href="#">파트너</a></li>
                             <li><a href="#">저작권 정책</a></li>
@@ -547,20 +514,20 @@
                     <div class="sns">
                         <ul>
                             <li><a href="#">
-                                <img src="img/icon-facebook.svg" alt="facebook">
-                            </a></li>
+                                    <img src="img/facebook_icon.svg" alt="facebook">
+                                </a></li>
                             <li><a href="#">
-                                <img src="img/icon-instagram.svg" alt="instagram">
-                            </a></li>
+                                    <img src="img/instagram_icon.svg" alt="instagram">
+                                </a></li>
                             <li><a href="#">
-                                <img src="img/icon-youtube.svg" alt="youtube">
-                            </a></li>
+                                    <img src="img/youtube_icon.svg" alt="youtube">
+                                </a></li>
                             <li><a href="#">
-                                <img src="img/icon-kakao.svg" alt="kakao">
-                            </a></li>
+                                    <img src="img/kakao_icon.svg" alt="kakao">
+                                </a></li>
                             <li><a href="#">
-                                <img src="img/icon-x.svg" alt="x">
-                            </a></li>
+                                    <img src="img/x_icon.svg" alt="x">
+                                </a></li>
                         </ul>
                     </div>
                 </div>
@@ -591,111 +558,97 @@
         </footer>
         <div class="sitemap">
             <div class="sitemap-in">
-                <a href="#" class="close-btn"><img src="img/close.svg" alt="close"></a>
+                <a href="#" class="close-btn"><img src="img/close_icon.svg" alt="close"></a>
                 <div class="sitebox">
-                    <ul>
-                        <div class="memberbox">
-                            <ul>
-                                <li><a href="#">LOGIN</a></li>
-                                <li><a href="#">SIGNUP</a></li>
-                            </ul>
-                        </div><!-- memberbox -->
-                        <div class="menu1">
-                            <ul>
-                                <li><a href="#">공유하기</a></li>
-                                <li><a href="#">활용사례</a></li>
-                                <li><a href="#">자료정보카드</a></li>
-                            </ul>
-                        </div><!-- menu1 -->
-                        <div class="menu2">
-                            <ul>
-                                <li>
-                                    <a href="#">안녕</a>
-                                    <ul class="sub">
-                                        <li><a href="#">상자소개</a></li>
-                                        <li><a href="#">대한민국의 국기, 태극기</a></li>
-                                        <li><a href="#">한국인의 글자, 한글</a></li>
-                                        <li><a href="#">대한민국 역사</a></li>
-                                    </ul>
-                                </li><!-- 안녕 -->
-                                <li>
-                                    <a href="#">사랑방</a>
-                                    <ul class="sub">
-                                        <li><a href="#">상자소개</a></li>
-                                        <li><a href="#">품위있는 남성의 공간, 사랑방</a></li>
-                                        <li><a href="#">문방사우와 서안</a></li>
-                                        <li><a href="#">출세</a></li>
-                                        <li><a href="#">선비의 덕목</a></li>
-                                    </ul>
-                                </li><!-- 사랑방 -->
-                                <li>
-                                    <a href="#">안방</a>
-                                    <ul class="sub">
-                                        <li><a href="#">상자소개</a></li>
-                                        <li><a href="#">우아한 여성의 공간, 안방</a></li>
-                                        <li><a href="#">규중칠우</a></li>
-                                        <li><a href="#">바느질과 규방공예</a></li>
-                                        <li><a href="#">안주인의 덕목</a></li>
-                                    </ul>
-                                </li><!-- 안방 -->
-                                <li>
-                                    <a href="#">한복</a>
-                                    <ul class="sub">
-                                        <li><a href="#">상자소개</a></li>
-                                        <li><a href="#">고운 옷, 한복</a></li>
-                                        <li><a href="#">여성 한복</a></li>
-                                        <li><a href="#">남성 한복</a></li>
-                                        <li><a href="#">어린이 한복</a></li>
-                                        <li><a href="#">혼례복</a></li>
-                                    </ul>
-                                </li><!-- 한복 -->
-                                <li>
-                                    <a href="#">대한민국 세계유산</a>
-                                    <ul class="sub">
-                                        <li><a href="#">창덕궁</a></li>
-                                        <li><a href="#">남한산성</a></li>
-                                        <li><a href="#">조선왕릉</a></li>
-                                        <li><a href="#">불국사</a></li>
-                                        <li><a href="#">대릉원</a></li>
-                                        <li><a href="#">종묘</a></li>
-                                        <li><a href="#">고인돌</a></li>
-                                        <li><a href="#">통도사</a></li>
-                                        <li><a href="#">양동 민속마을</a></li>
-                                        <li><a href="#">정림사지 5층 석탑</a></li>
-                                        <li><a href="#">수원화성</a></li>
-                                        <li><a href="#">해인사 장경판전</a></li>
-                                        <li><a href="#">소수서원 명륜당</a></li>
-                                        <li><a href="#">제주도 화선섬과 용암동굴</a></li>
-                                    </ul>
-                                </li><!-- 한복 -->
-                            </ul>
-                        </div><!-- menu2 -->
-                        <div class="sns">
-                            <ul>
-                                <li><a href="#"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
-                                <li><a href="#"><img src="img/icon-instagram.svg" alt="instagram"></a></li>
-                                <li><a href="#"><img src="img/icon-youtube.svg" alt="youtube"></a></li>
-                                <li><a href="#"><img src="img/icon-kakao.svg" alt="kakao story"></a></li>
-                                <li><a href="#"><img src="img/icon-x.svg" alt="X"></a></li>
-                            </ul>
-                        </div>
-                    </ul>
-                </div><!-- sitebox -->
-            </div><!-- sitemap-in -->
+                    <div class="memberbox">
+                        <ul>
+                            <li><a href="#">LOGIN</a></li>
+                            <li><a href="#">SIGNUP</a></li>
+                        </ul>
+                    </div> <!-- memberbox-->
+                    <div class="menu1">
+                        <ul>
+                            <li><a href="#">SNS</a></li>
+                            <li><a href="#">Follow us</a></li>
+                            <li><a href="#">Location</a></li>
+                        </ul>
+                    </div> <!-- menu 1-->
+                    <div class="menu2">
+                        <ul class>
+                            <li>
+                                <a href="#">
+                                    <p>Our Beers</p>
+                                    <i>
+                                        <span class="bar1"></span>
+                                        <span class="bar2"></span>
+                                    </i>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="#">All Our Beers</a></li>
+                                    <li><a href="#">Parmanet</a></li>
+                                    <li><a href="#">Seasonal</a></li>
+                                    <li><a href="#">Alcoho Free</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Restaurant</p>
+                                    <i>
+                                        <span class="bar1"></span>
+                                        <span class="bar2"></span>
+                                    </i>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="#">Snacks</a></li>
+                                    <li><a href="#">Healthy Stuff</a></li>
+                                    <li><a href="#">Treat Yourself</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Online Shop</p>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <p>Career</p>
+                                    <i>
+                                        <span class="bar1"></span>
+                                        <span class="bar2"></span>
+                                    </i>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="#">join Our Team</a></li>
+                                </ul>
+                            </li>
+                            <div class="SNS">
+                                <ul>
+                                    <li><a href="#"><img src="img/facebook_icon.svg" alt=""></a></li>
+                                    <li><a href="#"><img src="img/instagram_icon.svg" alt=""></a></li>
+                                    <li><a href="#"><img src="img/youtube_icon.svg" alt=""></a></li>
+                                    <li><a href="#"><img src="img/kakao_icon.svg" alt=""></a></li>
+                                    <li><a href="#"><img src="img/x_icon.svg" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </ul> <!-- ul.main -->
+                    </div> <!-- menu2-->
+                </div><!-- sitebox-->
+            </div> <!-- sitemap-in -->
             <div class="sitemap-bg"></div>
-        </div><!-- sitemap -->
+        </div> <!-- sitemap-->
         <div class="search-area">
             <div class="search-bg"></div>
             <div class="search-in">
                 <div class="input-area">
-                    <input type="search" name="search" placeholder="검색어를 입력해 주세요.">
-                    <button type="button">
-                        <img src="img/search.svg" alt="검색">
-                    </button>
-                </div><!-- input-area -->
-            </div><!-- search-in -->
-        </div><!-- search-area -->
-    </div><!-- wrap -->
+                    <input type="search" name="search" class="search-input" placeholder="검색어를 입력해주세요">
+                    <div class="search-btn">
+                        <button type="button">
+                            <img src="img/Search.svg" alt="검색">
+                        </button>
+                    </div>
+                </div><!--input-area-->
+            </div><!--search-in-->
+        </div><!--search-area-->
+    </div> <!-- wrap -->
     <div class="top"><a href="#">TOP</a></div>
 </body>
 
